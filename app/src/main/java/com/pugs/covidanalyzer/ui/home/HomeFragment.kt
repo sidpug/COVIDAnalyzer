@@ -39,7 +39,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         }
         /*view?.findViewById<Button>(R.id.button_sms)?.setOnClickListener {
             val mail = "+911123978046"
-            startActivity(Intent(Intent.ACTION_, Uri.parse(mail)))
+            startActivity(Intent.createChooser((Intent.ACTION_SENDTO, Uri.parse(mail)),"Choose email client")
         }*/
         return root
     }
